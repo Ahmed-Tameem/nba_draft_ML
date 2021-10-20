@@ -4,7 +4,7 @@ The model is trained on data from 2012 to 2015 and tested on the data from 2016.
 
 Before running main.py change the "path" variable in the function "scrape" to the full path of the data.
 
-Dependencies: numpy, pandas, matplotlib, nba_api (pip install nba_api)
+Dependencies: numpy, pandas, matplotlib, [nba_api](https://github.com/swar/nba_api) (pip install nba_api)
 
 # Credit to [Data World](https://data.world/achou/nba-draft-combine-measurements) for providing the data used.
 # Credit to Professor [Brad Quinton](https://ece.ubc.ca/brad-quinton/) for providing the skeleton code for the logisitc regression model.
