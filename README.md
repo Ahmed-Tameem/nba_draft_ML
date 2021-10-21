@@ -4,7 +4,7 @@ The models are trained on data from 2012 to 2015 and tested on the data from 201
 
 The logistic regression model achieves a validation accuracy of 75.4% and the DNN achieves a validation accuracy of 77.9% (80.3% training accuracy).
 
-Before running "DNN.py" or "logistic_regression.py", Change the "path" variable in the function "scrape" to the full path of the data
+Before running "DNN.py" or "logistic_regression.py", change the "path" variable in the function "scrape" to the full path of the data
 
 Dependencies: numpy, pandas, matplotlib, tensorflow, [nba_api](https://github.com/swar/nba_api).
 
