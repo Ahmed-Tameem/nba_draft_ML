@@ -60,28 +60,21 @@ Y_test = Y[456:]
 
 model = Sequential([
     Input(X.shape[0]),
-    Dense(10, kernel_initializer=he_normal()),
-    Activation("relu"),
-    Dense(100, kernel_initializer=he_normal()),
-    Activation("relu"),
-    Dense(80, kernel_initializer=he_normal()),
-    Activation("relu"),
-    Dense(60, kernel_initializer=he_normal()),
-    Activation("relu"),
-    Dense(40, kernel_initializer=he_normal()),
-    Activation("relu"),
     Dense(20, kernel_initializer=he_normal()),
-    Activation("relu"),
+    Activation("elu"),
+    Dense(10, kernel_initializer=he_normal()),
+    Activation("elu"),
     Dense(1, kernel_initializer=he_normal()),
     Activation("sigmoid"),])
 
-optimizer = optimizers.SGD(lr=0.0008)
+optimizer = optimizers.SGD(lr=0.008)
 model.compile(loss="binary_crossentropy", optimizer=optimizer, metrics=["accuracy"])
 
 # Train the model
 history = model.fit(X_train.T, 
                     Y_train.T, 
                     validation_data=(X_train.T, Y_train.T), 
-                    epochs=100)
+                    epochs=21,
+                    batch_size=10)
 
 plot_training_history(history)
