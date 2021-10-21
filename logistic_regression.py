@@ -65,7 +65,6 @@ def compute_cost(A, Y):
         A single float for the cost
     """
     
-    cost = None
     cost = float(np.sum(  np.matmul(np.log(A),Y)  +  np.matmul(np.log(1-A),1-Y)  ))/  (-1*(A.shape[1]))
 
     return cost
