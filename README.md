@@ -2,7 +2,7 @@ This project tests the accuracy of a naive logistic regression model and a DNN f
 
 The models are trained on data from 2012 to 2015 and tested on the data from 2016.
 
-The logistic regression model achieves a validation accuracy of 75.4% and the DNN achives a validation accuracy of 77.9% (80.3% training accuracy).
+The logistic regression model achieves a validation accuracy of 75.4% and the DNN achieves a validation accuracy of 77.9% (80.3% training accuracy).
 
 Before running "DNN.py" or "logistic_regression.py", Change the "path" variable in the function "scrape" to the full path of the data
 
